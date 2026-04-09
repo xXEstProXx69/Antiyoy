@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<title>Antiyoy</title>
+</head>
+<body>
+<div id="app">
+
+
+<div id="lobby">
+  <h1>ANTIYOY</h1>
+  <p>Multiplayer strateegiamäng</p>
+
+  <div class="card">
+    <h2>Ühenda serveriga</h2>
+    <div class="input-row">
+      <input type="text" id="server-url" placeholder="Server URL" value="https://tinkr.tech" style="flex:2"/>
+    </div>
+    <div class="input-row">
+      <input type="text" id="db-namespace" placeholder="Namespace (nt poly)" value="poly"/>
+      <input type="text" id="db-name" placeholder="DB nimi (nt antiyoy)" value="antiyoy"/>
+    </div>
+    <div class="input-row">
+      <input type="text" id="username-input" placeholder="Sinu nimi" />
+      <button class="btn-primary">Liitu</button>
+    </div>
+    <div id="status-msg"></div>
+    <div id="error-msg"></div>
+  </div>
+
+  <div class="card">
+    <h2>Lobby</h2>
+    <div id="players-list" class="players-list">
+      <div style="color:white">Laadimine...</div>
+    </div>
+    <div class="status-row" style="margin-top:12px;">
+      <button class="btn-success">Alusta mängu</button>
+    </div>
+  </div>
+</div>
+
+</div>
+</body>
+<script defer src="script.js"></script>
+</html>

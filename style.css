@@ -1,0 +1,101 @@
+
+
+body {
+      box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: #0f172a;
+  color: #e2e8f0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#app {
+  width: 100%;
+  max-width: 500px;
+}
+
+#lobby {
+  text-align: center;
+}
+
+.card {
+  background: #1e293b;
+  padding: 20px;
+  border-radius: 12px;
+  margin-top: 20px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(0,0,0,0.5);
+}
+
+.input-row {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  background: #334155;
+  color: white;
+  transition: background 0.2s ease;
+}
+
+input:focus {
+  background: #475569;
+}
+
+button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  color: white;
+}
+
+.btn-primary {
+  background: #3b82f6;
+}
+
+.btn-primary:hover {
+  background: #2563eb;
+}
+
+.btn-success {
+  background: #22c55e;
+}
+
+.btn-success:hover {
+  background: #16a34a;
+}
+
+.players-list {
+  margin-top: 10px;
+  background: #334155;
+  padding: 10px;
+  border-radius: 8px;
+  min-height: 50px;
+}
+
+#status-msg {
+  margin-top: 10px;
+  color: #38bdf8;
+}
+
+#error-msg {
+  margin-top: 10px;
+  color: #ef4444;
+}
