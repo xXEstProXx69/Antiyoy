@@ -99,3 +99,9 @@ button {
   margin-top: 10px;
   color: #ef4444;
 }
+
+#game {
+  position: relative;
+  width: 100%;
+  height: 800px;
+}
