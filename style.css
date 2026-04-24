@@ -8,14 +8,16 @@ body {
   background: #0f172a;
   color: #e2e8f0;
   height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
 }
 
 #app {
+
+  position: relative;
   width: 100%;
   max-width: 500px;
+  top: 17%;
+  left: 36%;
 }
 
 #lobby {
@@ -101,7 +103,51 @@ button {
 }
 
 #game {
-  position: relative;
-  width: 100%;
-  height: 800px;
+  position: absolute;
+  top: 10%;
+  left: 25%;
+  border-color: #2549eb;
+  border-width: 2px;
+  border-style: solid;
+  width: 50%;
+  height: 85%;
+}
+
+.selected-hex {
+  filter: brightness(1.4);
+  outline: 2px solid #38bdf8;
+  box-sizing: border-box;
+}
+
+#end-turn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: #3b82f6;
+}
+
+#end-turn:hover {
+  background: #2563eb;
+}
+
+#turn-text {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#Your-name {
+  position: absolute;
+  top: 50px;
+  left: 20px;
+  font-size: 16px;
+}
+
+#abortbtn {
+  position: absolute;
+  top: 60px;
+  right: 20px;
+  background: #ef4444;
 }
