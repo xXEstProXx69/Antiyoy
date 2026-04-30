@@ -115,8 +115,6 @@ button {
 
 .selected-hex {
   filter: brightness(1.4);
-  outline: 2px solid #38bdf8;
-  box-sizing: border-box;
 }
 
 #end-turn {
