@@ -22,8 +22,8 @@
       <input type="text" id="server-url" placeholder="Server URL" value="https://tinkr.tech" style="flex:2"/>
     </div>
     <div class="input-row">
-      <input type="text" id="db-namespace" placeholder="Namespace (nt poly)" value="poly"/>
-      <input type="text" id="db-name" placeholder="DB nimi (nt antiyoy)" value="antiyoy"/>
+      <input type="text" id="db-namespace" placeholder="Namespace (nt poly)" value="Philipp_antiyoy"/>
+      <input type="text" id="db-name" placeholder="DB nimi (nt antiyoy)" value="philipp_database"/>
     </div>
     <div class="input-row">
       <input type="text" id="username-input" placeholder="Sinu nimi" />
@@ -48,9 +48,51 @@
 
   <div id="game"></div>
   <button  id="end-turn">Lõpeta oma kord</button>
-  <button id="abortbtn">Tühista mäng</button>
-  <div id="coin-counter">🪙</div>
-  <button id="buy-farm">Buy Farm</button>
+  <button id="abortbtn">Anna Alla</button>
+<div id="shop-panel">
+
+  <div id="coin-counter"></div>
+<div id="income-counter"></div>
+
+  <button class="buy-btn" data-type="peasant">
+    <img src="https://tinkr.tech/sdb_apps/antiyoy/images/unit_peasant.svg">
+    Peasant <span class="cost">10</span>
+  </button>
+
+  <button class="buy-btn" data-type="spearman">
+    <img src="https://tinkr.tech/sdb_apps/antiyoy/images/unit_spearman.svg">
+    Spearman <span class="cost">20</span>
+  </button>
+
+  <button class="buy-btn" data-type="knight">
+    <img src="https://tinkr.tech/sdb_apps/antiyoy/images/unit_knight.svg">
+    Knight <span class="cost">30</span>
+  </button>
+
+  <button class="buy-btn" data-type="baron">
+    <img src="https://tinkr.tech/sdb_apps/antiyoy/images/unit_baron.svg">
+    Baron <span class="cost">40</span>
+  </button>
+
+  <button class="buy-btn" data-type="farm">
+    <img src="https://tinkr.tech/sdb_apps/antiyoy/images/building_farm.svg">
+    Farm <span class="cost">10</span>
+  </button>
+
+  <button class="buy-btn" data-type="tower">
+    <img src="https://tinkr.tech/sdb_apps/antiyoy/images/building_tower.svg">
+    Tower <span class="cost">15</span>
+  </button>
+
+  <button class="buy-btn" data-type="fortress">
+    <img src="https://tinkr.tech/sdb_apps/antiyoy/images/building_fortress.svg">
+    Fortress <span class="cost">35</span>
+  </button>
+
+</div>
+
+
+
   <div  id="turn-text"></div>
   <div  id="Your-name"></div>
 
