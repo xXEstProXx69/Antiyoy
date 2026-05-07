@@ -21,7 +21,7 @@ function applyTurnColor() {
     green: "#22c55e",
     yellow: "#eab308",
     purple: "#a855f7"
-  };
+  };  
   const currentIndex = gameState.players.findIndex(p => p.username === gameState.current_player);
   const colorNames = ["red", "blue", "green", "yellow", "purple"];
   const color = colors[colorNames[currentIndex]];
